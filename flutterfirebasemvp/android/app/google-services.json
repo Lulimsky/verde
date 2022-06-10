@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "369963991023",
+    "project_id": "mvpverdefire",
+    "storage_bucket": "mvpverdefire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369963991023:android:0fb4eeebb6b81ce3efc01a",
+        "android_client_info": {
+          "package_name": "com.verde.flutterfirebasemvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369963991023-fmnsb4ellksc2m1f877co8jj3eq3dei8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXLsLBnHockPGPbVmog6VuXjCp6Rqh-vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369963991023-fmnsb4ellksc2m1f877co8jj3eq3dei8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
