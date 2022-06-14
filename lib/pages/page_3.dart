@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 
 void main() => runApp(MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.green),
-      home: MyHomePage(),
-    ));
+    theme: ThemeData(
+      primarySwatch: Colors.green
+    ),
+    home: MyHomePage(),
+));
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -12,25 +14,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  ScanResult? _scanResult;
+  ScanResult ? _scanResult;
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Lector códigos QR'),
       ),
       body: Center(
-          child: _scanResult == null
-              ? Text('Esperando datos de código')
-              : Column(
-                  children: [
-                    Text('Contenido: ${_scanResult?.rawContent}'),
-                    Text('Formato: ${_scanResult?.format.toString()}'),
-                  ],
-                )),
+        child:_scanResult==null?Text('Esperando datos de código'):Column(
+          children: [
+            Text('Contenido: ${_scanResult?.rawContent}'),
+            Text('Formato: ${_scanResult?.format.toString()}'),
+          ],
+        )
+      ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
+        onPressed: (){
           _scanCode();
         },
         child: Icon(Icons.camera),
