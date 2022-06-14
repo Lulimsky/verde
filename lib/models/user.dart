@@ -1,11 +1,11 @@
 class User {
   int? edad;
   String? nombre;
-  List<String>? profesiones;
+  int? points ;
 
   User({
     this.edad,
     this.nombre,
-    this.profesiones,
+    this.points,
   });
 }
