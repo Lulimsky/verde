@@ -20,7 +20,7 @@ class Page_2 extends StatelessWidget {
                 'QR scanner',
                 style: TextStyle(color: Colors.white),
               ),
-              onPressed: () => Navigator.pushNamed(context, 'page3'),
+              onPressed: () => Navigator.pushNamed(context, 'qr_page'),
             ),
           ],
         ),
