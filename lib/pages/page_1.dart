@@ -10,7 +10,6 @@ class Page_1 extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Page_1'),
       ),
-      body: const UserInformation(),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.accessibility_new),
         onPressed: () => Navigator.pushNamed(context, 'page2'),

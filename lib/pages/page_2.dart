@@ -8,7 +8,7 @@ class Page_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page_1'),
+        title: const Text('Page_2'),
       ),
       body: Center(
         child: Column(
@@ -17,26 +17,10 @@ class Page_2 extends StatelessWidget {
             MaterialButton(
               color: Colors.blueAccent,
               child: const Text(
-                'Establecer Usuario',
+                'QR scanner',
                 style: TextStyle(color: Colors.white),
               ),
-              onPressed: () {},
-            ),
-            MaterialButton(
-              color: Colors.blueAccent,
-              child: const Text(
-                'Cambiar Edad',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {},
-            ),
-            MaterialButton(
-              color: Colors.blueAccent,
-              child: const Text(
-                'Añadir profesión',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, 'page3'),
             ),
           ],
         ),
