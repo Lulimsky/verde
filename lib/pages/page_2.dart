@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class Page_2 extends StatelessWidget {
-  const Page_2({Key? key}) : super(key: key);
+class Page_3 extends StatelessWidget {
+  const Page_3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +15,17 @@ class Page_2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             MaterialButton(
-              color: Colors.blueAccent,
-              child: const Text(
-                'Establecer Usuario',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {},
-            ),
+                color: Colors.blueAccent,
+                child: const Text(
+                  'Establecer Usuario',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Page_3()),
+                  );
+                }),
             MaterialButton(
               color: Colors.blueAccent,
               child: const Text(
