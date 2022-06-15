@@ -48,7 +48,7 @@ class _QRScanPageState extends State<QRScanPage> {
       );
 
   Widget buildResult() => Container(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: Colors.white24,
