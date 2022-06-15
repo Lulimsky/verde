@@ -14,14 +14,10 @@ class Page_2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            MaterialButton(
-              color: Colors.blueAccent,
-              child: const Text(
-                'QR scanner',
-                style: TextStyle(color: Colors.white),
-              ),
+            FloatingActionButton(
+              child: const Icon(Icons.qr_code),
               onPressed: () => Navigator.pushNamed(context, 'page3'),
-            ),
+            )
           ],
         ),
       ),
