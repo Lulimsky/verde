@@ -3,31 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import './profile_screen.dart';
 
-// ignore: camel_case_types
-class Page_2 extends StatelessWidget {
-  const Page_2({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Register page'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text('register page'),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-// borrador
-class _HomePageState extends State {
-  //initialize Firebase
+class _HomePageState extends StatelessWidget {
+  const _HomePageState({Key? key}) : super(key: key);
   Future _initializeFirebase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
     return firebaseApp;
@@ -36,6 +13,9 @@ class _HomePageState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text('Register_Page'),
+        ),
         body: FutureBuilder(
       future: _initializeFirebase(),
       builder: (context, snapshot) {

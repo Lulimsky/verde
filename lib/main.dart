@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       home: const Page_1(),
       routes: {
         'page1': (_) => const Page_1(),
-        'page2': (_) => const Page_2(),
+        'page2': (_) => const LoginScreen(),
         'page3': (_) => const Page_3(),
         'page4': (_) => const Page_4(),
         'page5': (_) => const Page_5(),
