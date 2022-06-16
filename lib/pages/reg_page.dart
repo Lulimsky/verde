@@ -8,19 +8,14 @@ class Page_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page_2'),
+        title: const Text('Register page'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            MaterialButton(
-              color: Colors.blueAccent,
-              child: const Text(
-                'QR scanner',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () => Navigator.pushNamed(context, 'qr_page'),
+          children: const [
+            Text(
+              'register page'
             ),
           ],
         ),

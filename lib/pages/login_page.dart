@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 // ignore: camel_case_types
 class Page_1 extends StatelessWidget {
   const Page_1({Key? key}) : super(key: key);
@@ -8,12 +9,23 @@ class Page_1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page_1'),
+        title: const Text('Login page'),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.accessibility_new),
-        onPressed: () => Navigator.pushNamed(context, 'page2'),
-      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FloatingActionButton(
+              child: const Icon(Icons.app_registration),
+              onPressed: () => Navigator.pushNamed(context, "page2"),
+            ),
+            FloatingActionButton(
+              child: const Icon(Icons.login),
+              onPressed: () => Navigator.pushNamed(context, 'page3'),
+            ),
+          ]
+        )
+      )
     );
   }
 }
