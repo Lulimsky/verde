@@ -17,11 +17,11 @@ class Page_1 extends StatelessWidget {
           children: [
             FloatingActionButton(
               child: const Icon(Icons.app_registration),
-              onPressed: () => Navigator.pushNamed(context, "Page2"),
+              onPressed: () => Navigator.pushNamed(context, "page2"),
             ),
             FloatingActionButton(
               child: const Icon(Icons.login),
-              onPressed: () => Navigator.pushNamed(context, 'Page3'),
+              onPressed: () => Navigator.pushNamed(context, 'page3'),
             ),
           ]
         )
