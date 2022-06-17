@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'pages/reg_page.dart';
-import 'pages/login_page.dart';
 import 'pages/articles_page.dart';
+import 'pages/login_page.dart';
+import 'pages/reg_page.dart';
 import 'pages/user_page.dart';
 import 'pages/qrselection_page.dart';
 import 'pages/plastic_page.dart';
@@ -11,9 +11,19 @@ import 'pages/organic_page.dart';
 import 'pages/map_page.dart';
 import 'pages/qr_page.dart';
 
-void main() => runApp(const MyApp());
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main () async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  
+
   const MyApp({Key? key}) : super(key: key);
 
   @override

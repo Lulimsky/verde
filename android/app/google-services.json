@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1017364604472",
+    "firebase_url": "https://verde-login-default-rtdb.firebaseio.com",
+    "project_id": "verde-login",
+    "storage_bucket": "verde-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017364604472:android:7b948f18beecf2952728cd",
+        "android_client_info": {
+          "package_name": "com.example.flutter_singleton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017364604472-39cbc9l3l2u9ps52m4plcv97abk0ljeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkpwmKawrtrC6_qX01BzWFx1rore4eOVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017364604472-39cbc9l3l2u9ps52m4plcv97abk0ljeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
