@@ -15,14 +15,17 @@ class Page_3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton(
+              heroTag: "btn6",
               child: const Icon(Icons.qr_code),
               onPressed: () => Navigator.pushNamed(context, 'page4'),
             ),
             FloatingActionButton(
+              heroTag: "btn7",
               child: const Icon(Icons.map),
               onPressed: () => Navigator.pushNamed(context, 'page9'),
             ),
             FloatingActionButton(
+              heroTag: "btn8",
               child: const Icon(Icons.info),
               onPressed: () => Navigator.pushNamed(context, 'page10'),
             ),

@@ -15,6 +15,7 @@ class Page_5 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton(
+              heroTag: "btn9",
               child: const Icon(Icons.qr_code),
               onPressed: () => Navigator.pushNamed(context, 'QRScanPage'),
             )

@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         'page7': (_) => const Page_7(),
         'page9': (_) => const Page_9(),
         'page10': (_) => const Page_10(),
-        'QRScanPage': (_) => const QRScanPage(),
+        'QRScanPage': (_) => ScanQrPage(),
       },
     );
   }
